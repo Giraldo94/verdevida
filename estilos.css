@@ -1,0 +1,286 @@
+/* ----------------------
+   CONFIGURACIÓN GENERAL
+------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #555555;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+/* ----------------------
+   ENCABEZADO
+------------------------- */
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #2e7d32;
+}
+
+header .slogan {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #757575;
+}
+
+/* ----------------------
+   HERO SECTION
+------------------------- */
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1598207958794-78a7e7b694cd?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.contenido-hero {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* ----------------------
+   PRODUCTOS / GALERÍA
+------------------------- */
+
+.productos {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.productos h2 {
+  font-size: 28px;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.galeria-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.producto {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  color: #2e7d32;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.producto p {
+  font-size: 15px;
+  color: #555555;
+}
+
+/* ----------------------
+   CTA FINAL
+------------------------- */
+
+.cta-final {
+  background-color: #e8f5e9;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-final h2 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.cta-final p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* ----------------------
+   TESTIMONIOS
+------------------------- */
+
+.testimonios {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.contenedor-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonio {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testimonio p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.testimonio h4 {
+  font-weight: 600;
+  color: #2e7d32;
+  margin: 0;
+}
+
+/* ----------------------
+   FORMULARIO DE CONTACTO
+------------------------- */
+
+.contacto {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 26px;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.03);
+}
+
+/* ----------------------
+   PIE DE PÁGINA
+------------------------- */
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VerdeVida | Plantas Minimalistas</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="Estilos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" >
+    </head>
+
+    <body>
+        <header>
+            <h1>VerdeVida</h1>
+            <p class="slogan">Tu espacio, más vivo</p>
+        </header>
+        <main>
+            <!--Aquí irán nuestras secciones-->
+            <section class="hero">
+                <div class="contenido-hero">
+                    <h2>Decora con vida, respira naturaleza</h2>
+                    <p>Plantas minimalistas para transformar tu hogar u oficina sin esfuerzo.</p>
+                    <a href="#productos" class="boton">Ver catálogo</a>
+                </div>
+            </section>
+
+            <section id="productos" class="productos">
+                <h2>Nuestras Plantas</h2>
+                <div class="galeria-productos">
+                    <div class="producto">
+                        <img src="imagenes/sansevieria.webp" alt="Sansevieria">
+                        <h3>Sansevieria</h3>
+                        <p>Ideal para interiores, elegante y resistente.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="imagenes/helecho.webp" alt="Helecho Nephrolepis">
+                        <h3>Helecho Nephrolepis</h3>
+                        <p>Aporta frescura con su follaje suave y abundante.</p>
+                    </div>
+
+                    <div class="producto">
+                        <img src="imagenes/zamioculca.webp" alt="Zamioculca">
+                        <h3>Zamioculca</h3>
+                        <p>Fácil de cuidar y perfecta para oficinas modernas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonios">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="contenedor-testimonios">
+                    
+                    <div class="testimonio">
+                        <p>"Mi oficina ahora se siente mucho más acogedora. ¡Gracias VerdeVida!"</p>
+                        <h4>-Laura G.</h4>
+                    </div>
+
+                    <div class="testimonio">
+                        <p>"Las plantas llegaron en perfecto estado y se ven increíbles en mi sala."</p>
+                        <h4>-Carlos M.</h4>
+                    </div>
+
+                    <div class="testimonio">
+                        <p>"Me encantó la atención al cliente y la calidad de sus productos."</p>
+                        <h4>-Valentina R.</h4>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="cta-final">
+                <h2>¿Listo para transformar tu espacio?</h2>
+                <p>Explora nuestra colección y elige la planta ideal para tu estilo de vida.</p>
+                <a href="#productos" class="boton">Ver catálogo</a>
+            </section>
+
+            <section class="contacto" id="contacto">
+                <h2>Contáctanos</h2>
+                <form action="https://formspree.io/f/mnqepjvr" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 · Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
